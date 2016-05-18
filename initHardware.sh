@@ -18,17 +18,17 @@ notifyUser() {
 }
 
 initHardware() {
-	# commented stuff was used in Ubuntu 14.04
+	# commented stuff was used in Ubuntu 14.04 and left as examples
 	# init touchpad
 	#$xinputSet $touchpadID "Synaptics Palm Detection" 1
-	#$xinputSet $touchpadID "Synaptics Locked Drags" 1
-	#$xinputSet $touchpadID "Synaptics Locked Drags Timeout" 500
+	$xinputSet $touchpadID "Synaptics Locked Drags" 1
+	$xinputSet $touchpadID "Synaptics Locked Drags Timeout" 500
 	#$xinputSet $touchpadID "Synaptics Palm Dimensions" 10 50
 	#$xinputSet $touchpadID "Synaptics Click Action" 1 3 2
 	#$xinputSet $touchpadID "Synaptics Middle Button Timeout" 500
 	synclient TapButton3=2	# 3 finger tap = mouse wheel pressed
 	# init stick
-	$xinputSet $redJoystickID "Device Accel Velocity Scaling" 14.00
+	$xinputSet $redJoystickID "Device Accel Velocity Scaling" 20.00
 	#$xinputSet $redJoystickID "Device Accel Adaptive Deceleration" 1
 	$xinputSet $redJoystickID "Device Accel Constant Deceleration" 0.5
 
